@@ -8,7 +8,7 @@ RUN npm ci
 COPY . .
 
 # Default build-time arg; override at build with --build-arg
-ARG VITE_BACKEND_API_URL=http://localhost:5000
+ARG VITE_BACKEND_API_URL=https://pu-backend-965239735739.europe-west1.run.app
 ENV VITE_BACKEND_API_URL=$VITE_BACKEND_API_URL
 
 RUN npm run build
